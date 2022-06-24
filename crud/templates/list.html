@@ -1,0 +1,14 @@
+<ul>
+    <!-- iterate over object in list-->
+    {% for object in object_list%}
+        <!-- Display object-->
+        <li>{{object.title}}</li>
+        <li>{{object.description}}</li>
+
+        <hr />
+        <!-- If objects in list view is empty-->
+        {% empty %}
+        <li>No object yet.</li>
+    {% endfor %}
+
+</ul>

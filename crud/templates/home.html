@@ -1,0 +1,9 @@
+<h1>Todo App</h1>
+<form action="" method="POST">
+    <!-- security token -->
+    {%csrf_token%}
+
+    <!-- using the formset -->
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+</form>
